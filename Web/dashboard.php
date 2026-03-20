@@ -45,9 +45,7 @@ try {
 
 <button onclick="location.reload()">Actualiser</button>
 
-<form action="delete.php" method="post">
-    <button type="submit">Vider la base</button>
-</form>
+
 
 </body>
 </html>
