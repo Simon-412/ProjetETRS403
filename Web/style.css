@@ -1,0 +1,21 @@
+body {
+    font-family: Arial;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.box {
+    background: white;
+    width: 300px;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.ligne {
+    background: white;
+    width: 300px;
+    margin: 5px auto;
+    padding: 5px;
+    border-radius: 5px;
+}
