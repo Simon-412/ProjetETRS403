@@ -45,6 +45,10 @@ try {
 
 <button onclick="location.reload()">Actualiser</button>
 
+<form action="supprime.php" method="post" onsubmit="return confirm('Supprimer toutes les données');">
+    <button type="submit">Supprimer</button>
+</form>
+
 
 
 </body>
