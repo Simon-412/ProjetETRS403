@@ -5,6 +5,7 @@ try {
     $db->exec("DELETE FROM mesures_capteur");
 
     header("Location: affichage.php");
+
 } catch (PDOException $e) {
     echo "Erreur";
 }
