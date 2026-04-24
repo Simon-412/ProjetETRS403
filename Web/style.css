@@ -1,21 +1,294 @@
+/* Style général */
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial;
-    background-color: #f0f0f0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #222;
+}
+
+/* En-tête */
+header {
+    width: 90%;
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #0066cc;
+    color: white;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+header p {
+    margin: 5px 0 0 0;
+}
+
+/* Navigation */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 8px;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+nav a:hover,
+nav .active {
+    background-color: white;
+    color: #0066cc;
+}
+
+/* Contenu */
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Blocs principaux */
+.bloc {
+    background-color: white;
+    padding: 18px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+/* Bloc de titre */
+.titre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titre p,
+.info {
+    color: #666;
+}
+
+/* Cartes principales */
+.cartes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.carte {
+    background-color: white;
+    padding: 18px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
     text-align: center;
 }
 
-.box {
-    background: white;
-    width: 300px;
-    margin: 20px auto;
-    padding: 10px;
-    border-radius: 5px;
+.carte p {
+    color: #666;
+    margin-top: 0;
 }
 
-.ligne {
-    background: white;
-    width: 300px;
-    margin: 5px auto;
-    padding: 5px;
+.carte h2 {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+/* Statistiques et comparaison */
+.stats,
+.comparaison {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.stats div,
+.comparaison div {
+    background-color: #f7f7f7;
+    padding: 12px;
     border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.stats p,
+.comparaison p {
+    color: #666;
+    margin: 0 0 8px 0;
+}
+
+.stats h3,
+.comparaison h3 {
+    margin: 0;
+}
+
+/* Bloc de confort intérieur */
+.confort {
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 12px;
+    border: 1px solid #ddd;
+    background-color: #f7f7f7;
+}
+
+.confort h3 {
+    margin: 0;
+}
+
+/* Couleurs neutres pour les états */
+.chaud,
+.froid,
+.normal,
+.sec,
+.humide {
+    background-color: #f7f7f7 !important;
+    color: #222;
+}
+
+/* Message de comparaison */
+.message {
+    padding: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    background-color: #f7f7f7 !important;
+    color: #222;
+}
+
+/* Graphiques */
+.graphique {
+    height: 330px;
+}
+
+/* Haut des blocs */
+.haut-bloc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Sélection du nombre de valeurs */
+.choix-graphique select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #aaa;
+    background-color: white;
+    font-size: 14px;
+}
+
+/* Filtre historique */
+.filtre {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filtre input {
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Tableaux */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+}
+
+th {
+    background-color: #e6e6e6;
+    color: #222;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Boutons */
+button,
+.bouton {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+}
+
+button:hover,
+.bouton:hover {
+    background-color: #004c99;
+}
+
+/* Bouton gris */
+.gris {
+    background-color: #777;
+}
+
+.gris:hover {
+    background-color: #555;
+}
+
+/* Zone suppression */
+.danger-zone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e0aaaa;
+}
+
+/* Bouton suppression */
+.danger {
+    background-color: #d93636;
+}
+
+.danger:hover {
+    background-color: #a82020;
+}
+
+/* Adaptation petits écrans */
+@media screen and (max-width: 800px) {
+    header,
+    .titre,
+    .haut-bloc,
+    .danger-zone {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cartes,
+    .stats,
+    .comparaison {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        margin-top: 12px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 5px 0 0;
+    }
 }
